@@ -1,0 +1,24 @@
+div p {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightyellow;
+    border: 1px solid gold;
+    padding: 5px;
+}
+
+ul > li {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+input {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+}
