@@ -1,0 +1,31 @@
+body {
+    height: 1000px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.estatico { 
+    position: static;
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+.relativo {
+    position: relative;
+    background-color: lightblue;
+    padding: 10px;
+    top: 50px;
+    left: 50px;
+    margin: 10px;
+}
+
+.fijo {
+    position: fixed;
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 5px;
+}
