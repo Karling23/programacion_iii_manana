@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+
+<body>
+
+    <h2>Formulario de ingreso de nuevo paciente</h2>
+
+    <form action="procesar_consulta.php" method="post">
+        <table border="0">
+            <tr>
+                <td>
+                    <label for="nombre">Nombre del Paciente:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </td>
+                <td>
+                    <label for="correo">Correo Electronico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </td>
+                <td>
+                    <label for="medico">Ciudad donde vive:</label>
+                    <input type="text" id="medico" name="medico">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="genero">Genero:</label>
+                    <input type="radio" id="m" name="genero" value="M"> <label for="m">Masculino</label>
+                    <input type="radio" id="f" name="genero" value="F"> <label for="f">Femenino</label>
+                </td>
+                <td>
+                    <label for="especialidad">Especialidad:</label>
+                    <select id="especialidad" name="especialidad" required>
+                        <option value="">Seleccione...</option>
+                        <option value="general">Medicina General</option>
+                        <option value="pediatria">Pediatria</option>
+                        <option value="odontologia">odontologia</option>
+                        <option value="cardiologia">Cardiologia</option>
+                        <option value="dermatologia">Dermatologia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="sintomas">Descripcion de Sintomas:</label><br>
+                    <textarea id="sintomas" name="sintomas" rows="5" cols="30"></textarea>
+                </td>
+                <td>
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">Confirmo que la informacion es correcta</label>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+
+</body>
+</html>
