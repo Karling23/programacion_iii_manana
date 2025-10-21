@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para agendar cita medica</title>
+</head>
+<body>
+
+    <header>
+        <h1><center><i>Consultorio Karling23</i></center></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="01_index.html">Inicio</a></li>
+            <li><a href="02_consultoriokalring23.html">Nosotros</a></li>
+            <li><a href="03_especialidades.html">Especialidades</a></li>
+            <li><a href="05_contactos.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Formulario de Agendamiento de Cita Médica</h2>
+            <p>Por favor, completa la siguiente información para agendar tu cita con uno de nuestros especialistas.</p>
+
+            <form action="procesar_cita.php" method="post">
+
+                <table border="1">
+                    <tr bgcolor="grey">
+                        <th>Datos del Paciente</th>
+                        <th>Detalles de la Cita</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre completo:</label><br>
+                            <input type="text" id="nombre" name="nombre" required><br><br>
+
+                            <label for="correo">Correo electrónico:</label><br>
+                            <input type="email" id="correo" name="correo" required><br><br>
+
+                            <label for="telefono">Número de teléfono:</label><br>
+                            <input type="number" id="telefono" name="telefono"><br><br>
+
+                            <label for="edad">Edad:</label><br>
+                            <input type="number" id="edad" name="edad"><br><br>
+                        </td>
+
+                        <td>
+                            <label for="especialidad">Especialidad médica:</label><br>
+                            <select id="especialidad" name="especialidad">
+                                <option value="">--Seleccione una especialidad--</option>
+                                <option value="general">Medicina General</option>
+                                <option value="pediatria">Pediatría</option>
+                                <option value="odontologia">Odontología</option>
+                                <option value="nutricion">Nutrición</option>
+                                <option value="ginecologia">Ginecología</option>
+                                <option value="cardiologia">Cardiología</option>
+                            </select><br><br>
+
+                            <label for="fecha">Fecha de la cita:</label><br>
+                            <input type="date" id="fecha" name="fecha" required><br><br>
+
+                            <p>Turno preferido:</p>
+                            <input type="radio" id="mañana" name="turno" value="mañana">
+                            <label for="mañana">Mañana</label><br>
+
+                            <input type="radio" id="tarde" name="turno" value="tarde">
+                            <label for="tarde">Tarde</label><br><br>
+
+                            <p>¿Primera vez en el consultorio?</p>
+                            <input type="checkbox" id="primera" name="primera">
+                            <label for="primera">Sí, es mi primera cita</label><br><br>
+
+                            <label for="motivo">Motivo de la consulta:</label><br>
+                            <textarea id="motivo" name="motivo" rows="5" cols="30"></textarea><br><br>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+
+            </form>
+        </section>
+    </main>
+
+    <p><a href="01_index.html">Volver al inicio</a></p>
+
+</body>
+</html>
