@@ -47,4 +47,27 @@ export class BasicsService {
             parametro: parametro
         };
     }
+
+    calculoTriangulo(body: any): object {
+        const result: number = (body.base*body.altura) / 2
+        return {
+            service: 'Blog-Backend',
+            controller: '/basics tipo delete',
+            function: 'Ejemplo de peticion Delete',
+            parametro: body,
+            resultado: result
+        }
+    }
+
+    calculoRectangulo(ancho: number, alto: number): object {
+        const result: number = ancho * alto
+        return {
+            service: 'Blog-Backend',
+            controller: '/basics tipo delete',
+            function: 'calculo-area-rectangulo/:ancho/:alto',
+            alto,
+            ancho,
+            resultado: result
+        }
+    }
 }

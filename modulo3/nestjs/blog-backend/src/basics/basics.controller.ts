@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Post, Body, Put, Delete } from '@nestjs/common';
+import { Controller, Get, Param, Post, Body, Put, Delete,  } from '@nestjs/common';
 import { BasicsService } from './basics.service';
 
 @Controller('basics')
@@ -29,5 +29,18 @@ export class BasicsController {
     @Delete(':id')
     delete(@Param('id') id: string) {
         return this.basicsService.deleteFunction(id);
+    }
+
+    @Post('calculo-area-triangulo')
+    calculoTriangulo(@Body() bodyPost: object) {
+        return this.basicsService.calculoTriangulo(bodyPost);
+    }
+
+    @Get('calculo-area-rectangulo/:ancho/:alto')
+    calculoRectangulo(
+        @Param('ancho') ancho: number,
+        @Param('alto') alto: number,
+    ) {
+        return this.basicsService.calculoRectangulo(ancho,alto);
     }
 }
