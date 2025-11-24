@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="04_eventos_mp.js" defer></script>
+</head>
+<body>
+    <div id="contenedor"></div>
+
+    <button id="crear">Crear Nota Médica</button>
+
+    <button id="eliminar">Eliminar Nota</button>
+
+    <button onclick="alert('Bienvenido al consultorio')">
+        Mensaje rápido
+    </button>
+
+    <button onclick="saludar()">
+        Saludo del doctor
+    </button>
+
+    <p id="parrafo">Doble click para ver aviso</p>
+    
+    <form id="formulario" style="margin-top: 20px;">
+        <input type="text" id="nombre"
+            placeholder="Nombre del paciente"
+            />
+        <button type="submit">Registrar</button> 
+    </form>
+</body>
+</html>
