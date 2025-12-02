@@ -36,18 +36,16 @@ export class UsersController {
         page = Number(page);
         limit = limit > 100 ? 100 : limit;
 
-        const user = await this.usersService.findAll({
-            page,
-            limit,
-            search,
-            searchField,
-            sortBy,
-            sortOrder,
+        const users = await this.usersService.findAll({
+        page,
+        limit,
+        search,
+        searchField,
+        sortBy,
+        sortOrder,
         });
-
-        return new SuccessResponseDto('User created successfully', user);
+        return new SuccessResponseDto('List Users successfully', users);
     }
-
     @Get(':id')
     async findOne(@Param('id') id: string) {
         const user = await this.usersService.findOne(id);
