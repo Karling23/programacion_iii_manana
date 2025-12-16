@@ -1,28 +1,9 @@
-import Greeting from './props/Greeting';
-import Clock from './useEffect/Clock';
-import ScrollLogger from './useEffect/ScrollLogger';
+import MoverCaja from './useRef/MoverCaja';
 
 function App() {
   return (
     <>
-      <Clock />
-      <ScrollLogger />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
-      <Greeting name="Luis" />
+      <MoverCaja />
     </>
   );
 }
