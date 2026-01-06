@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- LOGO UTE -->
-<img src="URL_DEL_LOGO_AQUI" alt="UTE - Escuela de Tecnologías" width="250"/>
+<img src="https://ute.edu.ec/wp-content/uploads/2021/08/LogoUteTrans.png" alt="UTE - Escuela de Tecnologías" width="250"/>
 
 </div>
 

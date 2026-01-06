@@ -1,9 +1,9 @@
-import MoverCaja from './useRef/MoverCaja';
+import AreaTriangulo from './useState/areaTrianguloWhithLimit';
 
 function App() {
   return (
     <>
-      <MoverCaja />
+      <AreaTriangulo />
     </>
   );
 }
