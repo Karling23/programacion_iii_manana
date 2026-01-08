@@ -1,9 +1,9 @@
-import AreaTriangulo from './useState/areaTrianguloWhithLimit';
+import ListaUsuariosPaginado from './formularios/ListaUsuariosPaginado';
 
 function App() {
   return (
     <>
-      <AreaTriangulo />
+      <ListaUsuariosPaginado />
     </>
   );
 }
