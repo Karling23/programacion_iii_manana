@@ -1,0 +1,1 @@
+console.log("Sistema de Consultorio Médico listo para usarse.");

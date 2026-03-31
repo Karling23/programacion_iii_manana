@@ -1,0 +1,56 @@
+h1 {
+    color: darkgrey;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #43a047; 
+    color: #fff;
+    padding: 10px;
+    height: 100vh;
+}
+
+.menu div {
+    background-color: #2e7d32;
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.menu div:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+@media (min-width: 600px) {
+    .menu {
+        flex-direction: row;
+        height: auto;
+    }
+    .menu div {
+        width: auto;
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        justify-content: space-around;
+        padding: 20px 50px;
+    }
+    .menu div {
+        font-size: 1.8em;
+        margin: 0 20px;
+        padding: 25px;
+    }
+}

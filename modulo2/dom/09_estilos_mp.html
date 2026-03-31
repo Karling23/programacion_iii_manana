@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Corazón Animado</title>
+    <style>
+        #corazon {
+            width: 100px;
+            height: 100px;
+            background-color: #e63946;
+            position: relative;
+            transform: rotate(-45deg);
+            transition: all 0.5s ease;
+        }
+        #corazon::before,
+        #corazon::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: #e63946;
+            border-radius: 50%;
+            position: absolute;
+        }
+        #corazon::before {
+            top: -50px;
+            left: 0;
+        }
+        #corazon::after {
+            left: 50px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Corazón</h1>
+
+<div id="corazon"></div>
+
+<div style="margin-top:20px;">
+    <button onclick="cambiarColor()">Cambiar Color</button>
+    <button onclick="latido()">Latido</button>
+    <button onclick="reiniciar()">Reiniciar</button>
+</div>
+
+<script src="09_estilos_mp.js"></script>
+</body>
+</html>
